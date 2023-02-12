@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <script src="main.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FERA FOOD - CESUPA</title>
+</head>
+<body>
+    <h2>
+        Total: SALGADO(S) R$ <label id="valorTs"></label> <br><br>
+               LANCHE(S) R$ <label id="valorTl"></label><br><br>
+               BEBIDA(S) R$ <label id="valorTb"></label><br><br>
+               DOCE(S) R$ <label id="valorTd"></label><br><br>
+               Valor total final: <label id="valorTf"></label>
+
+    </h2>
+
+    <center>
+        <h1>FERA FOOD - CESUPA</h1>
+        <br><br>
+
+        <h2>Salgados:</h2>
+
+            <h3>
+            1) Coxinha caribenha: R$3,50 <br>
+            2) Croassaint: R$6,00 <br>
+            3) Mini pizza: R$4,50 <br>
+            <input type="number" id="salgados" placeholder="Digite número do pedido"><br>
+            <button onclick="confirmarS()">Confirmar Salgado</button><br>
+            Salgado selecionado: <label id="MostrarS"></label>
+            </h3>
+        <hr>
+        <h2>Lanches:</h2>
+            <h3>
+                1)Sanduíche de presunto: R$5,00 <br>
+                2)Hot dog: R$6,00 <br>
+                3)X-filé: R$12,00 <br>
+                <input type="number" id="lanches" placeholder="Digite número do pedido"><br>
+                <button onclick="confirmarL()">Confirmar Lanche</button><br>
+                Lanche selecionado: <label id="mostrarL"></label>
+               
+            </h3>
+            <hr>
+            <h2>Bebidas:</h2>
+            <h3>
+                1)Suco de laranja: R$2,50 <br>
+                2)Suco de acerola: R$2,00 <br>
+                3)Suco de abacaxi: R$3,00 <br>
+                <input type="number" id="bebidas" placeholder="Digite número do pedido"><br>
+                <button onclick="confirmarB()">Confirmar Bebida</button><br>
+                Bebida selecionado: <label id="MostrarB"></label>
+            </h3>
+            <hr>
+            <h2>Doces:</h2>
+            <h3>
+                1)Brigadeiro: R$1,00 <br>
+                2)Casadinho: R$2,00 <br>
+                3)Mousse de limão: R$5,00 <br>
+                <input type="number" id="doces" placeholder="Digite número do pedido"><br>
+                <button onclick="confirmarD()">Confirmar Doce</button><br>
+                Doce selecionado: <label id="MostrarD"></label>
+            </h3>
+    </center>
+
+    <h2>Carrinho: <label id="carrinhoS"></label> <label id="carrinhoL"></label>  <label id="carrinhoB"></label>  <label id="carrinhoD"></label> </h2>
+    
+    <button onclick="limparC()"> Limpar carrinho</button>
+    <script>
+        function limparC() {
+            document.getElementById("carrinhoS").innerText=" "
+            document.getElementById("carrinhoL").innerText=" "
+            document.getElementById("carrinhoB").innerText=" "
+            document.getElementById("carrinhoD").innerText=" "        
+        }
+
+    </script>
+
+</body>
+</html>

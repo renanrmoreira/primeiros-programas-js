@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login FeraFood</title>
+</head>
+<body>
+    <center>
+        <h1>lOGIN</h1>
+        <br><br>
+        <input id="Login" type="text" placeholder="Insira login"><br>
+        <input id="Senha" type="text" placeholder="Insira senha"><br>
+        <input type="submit" onclick="logar()">
+
+    </center>
+
+    <script>
+        function logar() {
+            var login = document.getElementById('Login').value
+            var senha = document.getElementById('Senha').value
+            if (login=='Renan M'&& senha=='renan123') {
+                alert('login efetuado com sucesso')
+                location.href = 'index.html'
+
+            } else {
+                alert('erro senha incorreta')
+                
+            }
+            
+        }
+    </script>
+    
+</body>
+</html>
